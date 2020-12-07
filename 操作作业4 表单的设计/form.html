@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="" method="get">
+        姓名<input type="text" name="username" maxlength="5" placeholder="注意只能5位以内"><br>
+        密码<input type="password" name="pwd"><br>
+        性别<input type="radio" name="sex" value="male" id="sex1"><label for="sex1">男</label>
+            <input type="radio" name="sex" value="femlae">女<br>
+        兴趣<input type="checkbox" name="hobby" value="reading" checked>阅读
+            <input type="checkbox" name="hobby" value="sports">运动
+            <input type="checkbox" name="hobby" value="geme">游戏<br>
+        年龄<input type="number" name="age"><br>
+        你的主页<input type="url" name="page"><br>
+        你喜欢的颜色<input type="color" name="color"><br>
+        你的出生年月<input type="date" name="birth"><br>
+        请上传文件<input type="file" name="file"><br>
+        请选择你所在的城市<br>
+        <select name="city" id="" size="3" multiple>
+            <option value="" disabled selected>请选择一个城市</option>
+            <option value="杭州">杭州</option>
+            <option value="上海">上海</option>
+            <option value="北京">北京</option>
+            <option value="广州">广州</option>
+        </select>
+        请提出您宝贵的意见：<br>
+        <textarea name="" id="" cols="30" rows="10" wrap="off"></textarea>
+        <input type="submit" value="login">
+        <input type="reset">
+        <input type="button" value="点我" onclick="alert('你为什么点我！')">
+    </form>
+</body>
+</html>

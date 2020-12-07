@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度新闻——海量中文资讯平台</title>
+    <style>
+        .box{position: fixed;
+            width: 54px;
+            list-style: none;
+            left: 50%;
+            margin-left: 502px;
+            bottom: 20px;
+        }
+        .box1{width: 48px;height: 48px; background: url(img/icon-merged.png);
+            position:relative;
+            overflow: hidden;
+            margin-top: 3px;
+            }
+        a{position:absolute;
+            top:0px;left:0px;
+            background: #18448e;
+            width: 48px;
+            height: 92px;
+            transform-origin: -50% 50%;
+            transform:rotate3d(0,0,1,90deg);
+            transition:.3s ease-in;
+            opacity:0;
+            line-height: 48px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #fff;
+            border-radius: 3px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .box1:hover a{
+            transform:rotate3d(0,0,1,0deg);
+            opacity:1;
+        }
+        .report{width: 48px;height: 92px;background: url(img/report.png); 
+            position:relative;
+            overflow: hidden;
+            margin-top: 3px;
+        }
+        .report a{
+            line-height: 92px;
+            transform-origin: -100% 50%;
+        }
+        .report:hover a{
+            transform:rotate3d(0,0,1,0deg);
+            opacity:1;
+            
+        }
+        .favorite{
+            background-position: 0 -51px;
+        }
+        .search{
+            background-position: 0 -204px;
+        }
+        .feedback{
+            background-position: 0 -255px;
+        }
+        .favorite a, .feedback a{
+            width: 28px;
+            height: 28px;
+            line-height: 14px;
+            padding: 10px;
+        }   
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="report"><a href="#">举报</a></div>
+        <div class="box1"><a href="#">二维码</a></div>
+        <div class="box1 favorite"><a href="#">收藏本站</a></div>
+        <div class="box1 search"><a href="#">搜索</a></div>
+        <div class="box1 feedback"><a href="#">用户反馈</a></div>
+    </div>
+</body>
+</html>
