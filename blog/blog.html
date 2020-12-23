@@ -4,44 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cola</title>
-    <link rel="stylesheet" href="main.css" />
     <style>
-       
+        ul{list-style: none;}
+        .menu>li{
+            float: left;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            background-color: royalblue;
+            margin: 0 3px;
+            padding: 0 10px;
+            text-align: center;
+            transform: skewX(30deg);
+        }
+        a{
+            color: #fff;
+            text-decoration: none;
+            display:block;
+            transform: skewX(-30deg);
+        }
+        .menu>li:hover{
+            background-color: tomato;
+        }
+        .submenu{display: none;}
+        .submenu>li{
+            background-color: cadetblue;
+            width: 100px;
+            transform: skewX(-30deg);
+        }
+        .menu>li:hover .submenu{display: block;}
+        .head{position: fixed;}
+        .left{float: left;}
+        .right{float: right;}
+        .list{
+            width: 750px;height: 160px;
+            display: block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    -webkit-box-shadow: 0 1px 3px rgba(26,26,26,.1);
+    box-shadow: 0 1px 3px rgba(26,26,26,.1);
+    background: #fafafa;
+    border-radius: 2px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px
+        }
     </style>
 </head>
 <body>
-    <nav id="nav">
-        <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li>
-                <a href="#">Dropdown</a>
-                <ul>
-                    <li><a href="#">Lorem dolor</a></li>
-                    <li><a href="#">Magna phasellus</a></li>
-                    <li><a href="#">Etiam sed tempus</a></li>
-                    <li>
-                        <a href="#">Submenu</a>
-                        <ul>
-                            <li><a href="#">Lorem dolor</a></li>
-                            <li><a href="#">Phasellus magna</a></li>
-                            <li><a href="#">Magna phasellus</a></li>
-                            <li><a href="#">Etiam nisl</a></li>
-                            <li><a href="#">Veroeros feugiat</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Veroeros feugiat</a></li>
-                </ul>
-            </li>
-            <li><a href="left-sidebar.html">Left Sidebar</a></li>
-            <li><a href="right-sidebar.html">Right Sidebar</a></li>
-            <li><a href="two-sidebar.html">Two Sidebar</a></li>
-            <li><a href="no-sidebar.html">No Sidebar</a></li>
+        <nav id="nav">
+            <div class="head">
+        <ul class="menu">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="./blog.html">博客</a>
+            <li><a href="#">图片</a></li>
+            <li><a href="../donation/donation.html">赞助</a></li>
         </ul>
+    </div>
     </nav>
-    <div class="head"></div>
-    <div class="left"></div>
+
+    <div class="left">
+        <ul>
+            <li>
+                <div class="list">
+                    <span>2020-12-23</span>
+                    <h3><a href="./posts/kalifbl.html" target="_blank">kali修改分辨率</a></h3>
+                </div>  
+            </li>
+            <li>
+                <div class="list">
+                    <span>2020-12-23</span>
+                    <h3>kali修改分辨率</h3>
+                </div>  
+            </li>
+            <li>
+                <div class="list">
+                    <span>2020-12-23</span>
+                    <h3>kali修改分辨率</h3>
+                </div>  
+            </li>
+            <li>
+                <div class="list">
+                    <span>2020-12-23</span>
+                    <h3>kali修改分辨率</h3>
+                </div>  
+            </li>
+        </ul>
+    </div>
     <div class="right">
         <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="http://music.163.com/outchain/player?type=0&id=3174628393&auto=1&height=430"></iframe>
+        <img src="https://ws234.com/demo/ip/" height="150">
     </div>
 </body>
 </html>
