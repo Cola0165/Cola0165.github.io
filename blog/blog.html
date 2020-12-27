@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cola</title>
     <style>
+        body{background: url(background.jpg)}
         ul{list-style: none;}
         .menu>li{
             float: left;
@@ -33,7 +34,21 @@
             transform: skewX(-30deg);
         }
         .menu>li:hover .submenu{display: block;}
-        .head{position: fixed;}
+        .head{width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    -webkit-box-shadow: 0 1px 3px rgba(26,26,26,.1);
+    box-shadow: 0 1px 3px rgba(26,26,26,.1);
+    margin: 0 auto;
+    height: 42px;
+    width: 980px;
+    min-width: 60%;
+    max-width: 100%;
+    position: relative;
+    padding: 0 35px;
+    z-index: 1000;}
         .main{position: relative;
   width: 980px;
   margin: 48px auto;
@@ -54,7 +69,9 @@
         width:70%;margin-left:2%;margin-bottom:10px;overflow:hidden;
 
     }
+    }
         .list>span{
+            width: 100%;
             -webkit-filter: invert(100) hue-rotate(180deg);
   filter: invert(100) hue-rotate(180deg);
   color: #fafafa;
@@ -67,8 +84,9 @@
     </style>
 </head>
 <body>
-        <nav id="nav">
-            <div class="head">
+       
+            <div class="head"> 
+            <nav id="nav">
         <ul class="menu">
             <li><a href="../index.html">首页</a></li>
             <li><a href="./blog.html">博客</a>
@@ -76,7 +94,9 @@
             <li><a href="../donation/donation.html">赞助</a></li>
         </ul>
     </div>
-    </nav>
+    <div class="middle">
+        
+    </div>
     <div class="main">
     <div class="left">
         <ul>
@@ -131,6 +151,16 @@
         </ul>
     </div>
     <div class="right">
+        <div>
+            <h3>一言</h3>
+            <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+            <div id="hitokoto"></div>
+        </div>
+        <div>
+            <script
+  type="text/javascript"
+  src="https://api.seniverse.com/v3/weather/now.json?location=beijing&ts=1443079775&ttl=300&uid=[your_uid]&sig=[your_signature]&callback=showWeather"></script>
+        </div>
         <div>
             <h3>音乐</h3>
         <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="http://music.163.com/outchain/player?type=0&id=3174628393&auto=1&height=430"></iframe>
