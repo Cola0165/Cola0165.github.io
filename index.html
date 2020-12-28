@@ -6,7 +6,45 @@
     <title>欢迎访问小可的个人博客</title>
     <style type="text/css">
         body{background: url(flag.png);background-repeat: no-repeat;background-size:100%;}
-        p{font-size:72px;color:red;text-align:center;}
+        ul{list-style: none;}
+.menu>li{
+    float: left;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background-color: royalblue;
+    margin: 0 3px;
+    padding: 0 10px;
+    text-align: center;
+    transform: skewX(30deg);
+}
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    display:block;
+    transform: skewX(-30deg);
+}
+.menu>li:hover{
+    background-color: tomato;
+}
+.submenu{display: none;}
+.submenu>li{
+    background-color: cadetblue;
+    width: 100px;
+    transform: skewX(-30deg);
+}
+.menu>li:hover .submenu{display: block;}
+.head{
+z-index: 1000;
+-webkit-box-shadow: 0 1px 3px rgba(26,26,26,.1);
+box-shadow: 0 1px 3px rgba(26,26,26,.1);
+margin: 0 auto;
+height: 42px;
+width: 980px;
+min-width: 60%;
+max-width: 100%;
+padding: 300px 600px;
+z-index: 1000;}
         .snow-container {
             position: fixed;
             top: 0;
@@ -153,8 +191,15 @@
         init()
     });
 </script>
-    <p><a href="blog/blog.html">网站正在建设中</a></p>
-    <p>敬请期待……</p>
+<div class="head"> 
+    <nav id="nav">
+<ul class="menu">
+    <li><a href="index.html">首页</a></li>
+    <li><a href="blog/blog.html">博客</a>
+    <li><a href="img/img.html">图片</a></li>
+    <li><a href="donation/donation.html">赞助</a></li>
+</ul>
+</div>
     
 </body>
 </html>
