@@ -12,17 +12,14 @@
     width: 100px;
     height: 30px;
     line-height: 30px;
-    background-color: royalblue;
+    background-color: white;
     margin: 0 3px;
     padding: 0 10px;
     text-align: center;
-    transform: skewX(30deg);
 }
 .menu a{
-    color: #fff;
+    color: black;
     text-decoration: none;
-    display:block;
-    transform: skewX(-30deg);
 }
 .menu>li:hover{
     background-color: tomato;
@@ -35,16 +32,20 @@
 }
 .menu>li:hover .submenu{display: block;}
 .head{
-z-index: 1000;
--webkit-box-shadow: 0 1px 3px rgba(26,26,26,.1);
-box-shadow: 0 1px 3px rgba(26,26,26,.1);
-margin: 0 auto;
-height: 42px;
-width: 980px;
-min-width: 60%;
-max-width: 100%;
-padding: 300px 600px;
-z-index: 1000;}
+    width: 80%;
+    max-width: 650px;
+    background: rgba(0,0,0,0);
+    border-radius: 10px;
+    position: fixed;
+    left: 0;
+    top: 30%;
+    right: 0;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;}
         .snow-container {
             position: fixed;
             top: 0;
@@ -192,7 +193,6 @@ z-index: 1000;}
     });
 </script>
 <div class="head"> 
-    <nav id="nav">
 <ul class="menu">
     <li><a href="index.html">首页</a></li>
     <li><a href="blog/blog.html">博客</a>
@@ -200,6 +200,5 @@ z-index: 1000;}
     <li><a href="donation/donation.html">赞助</a></li>
 </ul>
 </div>
-    
 </body>
 </html>
