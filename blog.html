@@ -7,7 +7,7 @@
     <style>
         *{cursor:url(img/cur/Arrow.cur),auto}
         a{cursor:url(img/cur/Link\ Select.cur),auto}
-        body{background: url(img/background.jpg)}
+        body{background: url(img/background.jpg) no-repeat;background-size:cover;}
         ul{list-style: none;}
         .menu{float: left;}
         .menu>li{
@@ -49,6 +49,11 @@
   overflow: initial;}
         .left{float: left;width: 55%;}
         .right{float: left;width: 45%;}
+        @media screen and (min-device-height:1026px) and (max-device-width:1852px){
+            .left{float: none;margin: 0 auto;}
+            .right{float: none;margin:0 auto;}
+            .main{height: 1852px;}
+        }
     .list{
         display:block;margin-bottom:10px;margin-top:5px;background:#fafafa;border-radius:2px;border-top-left-radius:5px;border-top-right-radius:5px;
         display:inline-block;text-align:left;
