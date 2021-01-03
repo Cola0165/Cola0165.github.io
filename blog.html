@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cola</title>
+    <style>
+        *{cursor:url(img/cur/Arrow.cur),auto}
+        a{cursor:url(img/cur/Link\ Select.cur),auto}
+        body{background: url(img/background.jpg)}
+        ul{list-style: none;}
+        .menu{float: left;}
+        .menu>li{
+            float: left;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            background-color: royalblue;
+            margin: 0 3px;
+            padding: 0 10px;
+            text-align: center;
+            transform: skewX(30deg);
+        }
+        .menu a{
+            color: #fff;
+            text-decoration: none;
+            display:block;
+            transform: skewX(-30deg);
+        }
+        .menu>li:hover{
+            background-color: tomato;
+        }
+        .head>img{float: left;padding-top: 5px;margin-left: 5%;}
+        .head{width: 100%;
+    z-index: 1000;
+    margin: 0 auto;
+    height: 42px;
+    width: 980px;
+    min-width: 60%;
+    max-width: 100%;
+    position: relative;}
+    .middle{background-color: #fafafa;width: 980px; min-width: 55%;max-width: 100%;margin: 0 auto;}
+        .main{position: relative;
+  width: 980px;
+  height: 950px;
+  margin: 0 auto;
+  min-width: 60%;
+  max-width: 100%;
+  overflow: initial;}
+        .left{float: left;width: 55%;}
+        .right{float: left;width: 45%;}
+    .list{
+        display:block;margin-bottom:10px;margin-top:5px;background:#fafafa;border-radius:2px;border-top-left-radius:5px;border-top-right-radius:5px;
+        display:inline-block;text-align:left;
+        padding:10px 15px 0;list-style:none;
+        width:90%;margin-left:2%;margin-bottom:10px;overflow:hidden;
+        -webkit-box-shadow: 0 1px 3px rgba(26,26,26,.3);
+    box-shadow: 0 1px 3px rgba(26,26,26,.3);
+
+    }
+    }
+        .list>span{
+            width: 100%;
+            -webkit-filter: invert(100) hue-rotate(180deg);
+  filter: invert(100) hue-rotate(180deg);
+  color: #fafafa;
+        }
+    h3{
+        display:block;margin-left:54px;
+        height:26px;overflow:hidden;
+    }
+    h3 a{font-weight:700;color:#666;text-decoration: none;}
+    .right>div{
+        width: 70%;
+        display: block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    background: #fafafa;
+    border-radius: 2px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -webkit-box-shadow: 0 1px 3px rgba(26,26,26,.3);
+    box-shadow: 0 1px 3px rgba(26,26,26,.3);
+    }
+    .right div h3{margin-left:10px;margin-bottom:5px;color:#666;}
+    #hitokoto{margin-left:10px;}
+    .bottom{position: relative;bottom: 0px;text-align: center;color: #666666;}
+    #copy>a{text-decoration: none;color: #666666;}
+    </style>
+</head>
+<body>
+       
+            <div class="head"> 
+                <img src="img/ProfilePhoto.jpg" style="width:50px;height:50px;border-radius:50%">
+        <ul class="menu"> 
+            <li><a href="index.html">首页</a></li>
+            <li><a href="blog.html">博客</a>
+            <li><a href="img.html" target="_blank">图片</a></li>
+            <li><a href="donation.html">赞助</a></li>
+        </ul>
+    </div>
+    <div class="middle">
+        
+    </div>
+    <div class="main">
+        
+    <div class="left">
+        <ul>
+            <li>
+                <div class="list">
+                    <span>2020-12-26</span>
+                    <h3><a href="posts/i78700threecore.html" target="_blank">i7-8700只有三核？</a></h3>
+                </div>  
+            </li>
+            <li>
+                <div class="list">
+                    <span>2020-12-12</span>
+                    <h3><a href="posts/cet4.html" target="_blank">CET4高频单词</a></h3>
+                </div>  
+            </li>
+            <li>
+                <div class="list">
+                    <span>2020-12-04</span>
+                    <h3><a href="posts/ctfshowmisc2.html" target="_blank">CTFshow misc2 WP</a></h3>
+                </div>  
+            </li>
+            <li>
+                <div class="list">
+                    <span>2020-11-15</span>
+                    <h3><a href="posts/kalifbl.html" target="_blank">kali修改分辨率</a></h3>
+                </div>  
+            </li>
+            <li>
+                <div class="list">
+                    <span>2020-10-06</span>
+                    <h3><a href="posts/rs232motorola.html" target="_blank">RS-232与摩托罗拉机顶盒通信实验</a></h3>
+                </div>  
+            </li>
+            <li>
+                <div class="list">
+                    <span>2020-04-07</span>
+                    <h3><a href="posts/315zhapian.html" target="_blank">防诈骗：出售二手要小心</a></h3>
+                </div>  
+            </li>
+            <li>
+                <div class="list">
+                    <span>2020-03-31</span>
+                    <h3><a href="posts/covid19.html" target="_blank">对于新冠肺炎疫情的感想</a></h3>
+                </div>  
+            </li>
+            <li>
+                <div class="list">
+                    <span>2020-02-08</span>
+                    <h3><a href="posts/cctvm3u8.html" target="_blank">获取央视频APP直播源</a></h3>
+                </div>  
+            </li>
+        </ul>
+    </div>
+    <div class="right">
+        <div>
+            <h3>一言</h3>
+            <div id="hitokoto">
+            </div>
+            <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+        </div>
+        <div>
+            <script
+  type="text/javascript"
+  src="https://api.seniverse.com/v3/weather/now.json?location=beijing&ts=1443079775&ttl=300&uid=[your_uid]&sig=[your_signature]&callback=showWeather"></script>
+        </div>
+        <div>
+            <h3>音乐</h3>
+            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=450 src="http://music.163.com/outchain/player?type=0&id=5434470655&auto=1&height=430"></iframe>
+        </div>
+        <div>
+        <img src="https://ws234.com/demo/ip/" height="150">
+    </div>
+    </div>
+</div>
+<div class="bottom">
+    <p id="copy">
+<span id="sitetime"></span>
+        <script>
+            function siteTime(){
+            window.setTimeout("siteTime()", 1000);
+            var seconds = 1000;
+            var minutes = seconds * 60;
+            var hours = minutes * 60;
+            var days = hours * 24;
+            var years = days * 365;
+            var today = new Date();
+            var todayYear = today.getFullYear();
+            var todayMonth = today.getMonth();
+            var todayDate = today.getDate();
+            var todayHour = today.getHours();
+            var todayMinute = today.getMinutes();
+            var todaySecond = today.getSeconds();
+            var t1 = Date.UTC(2020,9,22,13,10,00);
+            var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+            var diff = t2-t1;
+            var diffYears = Math.floor(diff/years);
+            var diffDays = Math.floor((diff/days)-diffYears*365);
+            var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+            var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+            var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+            document.getElementById("sitetime").innerHTML=" 已建站 "+(diffYears*365+diffDays)+" 天 "+diffHours+" 时 "+diffMinutes+" 分 "+diffSeconds+" 秒";
+            }
+            siteTime();
+            </script>
+            <br>
+            版权所有 &copy; 2020-2021 Cola | <a href="https://github.com/Cola0165/">github</a>
+        </p>
+</div>
+</body>
+</html>

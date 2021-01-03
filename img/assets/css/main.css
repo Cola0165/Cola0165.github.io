@@ -1,12 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
-@import url("fontawesome-all.min.css");
-
-/*
-	Parallelism by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -83,10 +74,10 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/overlay.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
-		background-image: url("images/overlay.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
-		background-image: url("images/overlay.png"), linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../bg.jpg");
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../bg.jpg");
+		background-image: url("images/overlay.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../bg.jpg");
+		background-image: url("images/overlay.png"), linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../bg.jpg");
 		background-position: top left, bottom left, auto;
 		background-size: auto, 100% 100%, cover;
 		background-attachment: fixed;
@@ -186,7 +177,6 @@ input, select, textarea {
 		font-weight: 600;
 	}
 
-/* List */
 
 	ul.icons {
 		cursor: default;
@@ -228,7 +218,6 @@ input, select, textarea {
 
 		}
 
-/* Icons */
 
 	.icon {
 		text-decoration: none;
@@ -401,7 +390,7 @@ input, select, textarea {
 			}
 
 			#main .item.intro {
-				background-color: #d64760;
+				background-color: #38a33a;
 				background-image: url("images/overlay.png");
 				display: -moz-flex;
 				display: -webkit-flex;
@@ -710,8 +699,6 @@ input, select, textarea {
 					}
 
 		}
-
-/* Popup */
 
 	.poptrox-popup {
 		background: #1a1f2c;

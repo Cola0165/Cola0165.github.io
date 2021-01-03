@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap{border: 1px solid #ccc;height: 500px;width: 500px;
+        margin: 0 auto;margin-top: 35px;position: relative;}
+        #zhuzi{width: 12px;height: 0px;position: absolute;bottom: 0px;left: 535px;
+               border-width: 0px 25px 380px 25px;
+               border-style: none solid solid solid;
+               border-color: transparent transparent #996699 transparent;}
+        #zhou{width: 50px;height: 50px;background: red;position: absolute;
+              left: 540px;top: 185px;
+              animation:fengchezhuandong 3s;
+              animation-iteration-count: infinite;
+              animation-timing-function: linear;
+              }
+        .zhizhen{width: 12px;height: 4px;position: absolute;left: 25px;top: 25px;
+        border-width: 0px 0px 125px 280px;
+        border-style: none none solid solid;
+        border-color: transparent transparent transparent #ffff00;
+        transform-origin: 0 0;}
+        .z2{
+            transform: rotate(90deg);
+            border-color: transparent transparent transparent #66cccc;
+        }
+        .z3{
+            transform: rotate(180deg);
+            border-color: transparent transparent transparent #cc99cc;
+
+        }
+        .z4{
+            transform: rotate(270deg);
+            border-color: transparent transparent transparent #99cc33;
+        }
+        .zhuanzhou{width: 50px;height: 50px;position: absolute;
+            background: #ffcc33;border-radius: 25px;}
+        @keyframes fengchezhuandong {
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="zhuzi"></div>
+        <div id="zhou">
+            <div class="zhizhen z1"></div>
+            <div class="zhizhen z2"></div>
+            <div class="zhizhen z3"></div>
+            <div class="zhizhen z4"></div>
+            <div class="zhuanzhou"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTFshow misc2 WP-Cola</title>
+    <link href="posts.css" type="text/css" rel="stylesheet"/>
+</head>
+<body> 
+    <div class="head"> 
+        <img src="../img/ProfilePhoto.jpg" style="width:50px;height:50px;border-radius:50%">
+        <ul class="menu">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="../blog.html">博客</a></li>
+            <li><a href="../img.html">图片</a></li>
+            <li><a href="../donation.html">赞助</a></li>
+        </ul>
+</div>
+<div class="main">
+    <h1>CTFshow misc2 WP</h1>
+    <span>2020-12-04</span>
+    <hr>
+    <p><a href="file.zip">下载附件</a>得到file文件，根据题目中提到“软盘”，将文件放入DiskGenius中查看，可以看到里面包含文件“HARIBOTE.SYS”，百度了下这个文件名，有关于“自制操作系统”，顺便看下16进制数据，发现写着FAT11</p>
+    <img src="ctfshowmisc2_1.png">
+    <p>事实上是没有FAT11这种格式的，看到DiskGenius已经自动识别为FAT12了。</p>
+    <img src="ctfshowmisc2_2.png">
+    <p>于是修改为FAT12后保存</p>
+    <img src="ctfshowmisc2_5.png">
+    <p>猜测这个文件可能是自制的操作系统，那么使用VMware虚拟机能否打开呢？使用VMware新建一个虚拟机，系统版本可选择MS-DOS，一路下一步即可，虚拟机新建好后，选择“编辑虚拟机设置”，添加软盘驱动器，选择软盘映像文件为修改后的file文件</p>
+    <img src="ctfshowmisc2_3.png">
+    <p>开启虚拟机后即可得到flag</p>
+    <img src="ctfshowmisc2_4.png">
+</div>
+</body>
+</html>

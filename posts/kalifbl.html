@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kali设置分辨率为1920×1080-Cola</title>
+    <link href="posts.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="head"> 
+        <img src="../img/ProfilePhoto.jpg" style="width:50px;height:50px;border-radius:50%">
+        <ul class="menu">
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="../blog.html">博客</a></li>
+            <li><a href="../img.html">图片</a></li>
+            <li><a href="../donation.html">赞助</a></li>
+        </ul>
+</div>
+<div class="main">
+    <h1>kali设置分辨率为1920×1080</h1>
+    <span>2020-11-15</span>
+    <hr>
+    <p>在VMware中安装Kali，设置分辨率时无1920×1080选项</p>
+    <img src="kalifbl_1.png">
+    <p>但使用其它分辨率会影响观感。在终端中输入如下代码可以实现设置分辨率为1920×1080：</p>
+    <pre>
+        xrandr --newmode "1920x1080"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync
+        xrandr --addmode Virtual1 1920x1080
+        xrandr --output Virtual1 --mode 1920x1080
+    </pre>
+    <p>但在重启后又会发现，分辨率变回的原来的设置。而且有时虚拟机并不是全屏使用的，能否让VMware自动调整大小呢？可以找到在“查看”→“自动调整大小”中进行相关设置，即可实现。</p>
+    <img src="kalifbl_2.png">
+</div>
+</body>
+</html>

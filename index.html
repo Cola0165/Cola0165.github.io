@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>欢迎访问小可的个人博客</title>
     <style type="text/css">
-        body{background: url(flag.png) no-repeat;background-size:cover;min-height:584px;}
+        *{cursor:url(img/cur/Arrow.cur),auto}
+        a{cursor:url(img/cur/Link\ Select.cur),auto}
+        body{background: url(img/flag.png) no-repeat;background-size:cover;}
         ul{list-style: none;}
 .menu>li{
     float: left;
     width: 100px;
     height: 30px;
     line-height: 30px;
-    background-color: white;
+    background-color: rgba(255,255,255,0.7);
     margin: 0 3px;
     padding: 0 10px;
     text-align: center;
@@ -24,21 +26,13 @@
 .menu>li:hover{
     background-color: tomato;
 }
-.submenu{display: none;}
-.submenu>li{
-    background-color: cadetblue;
-    width: 100px;
-    transform: skewX(-30deg);
-}
-.menu>li:hover .submenu{display: block;}
 .head{
     width: 80%;
     max-width: 650px;
-    background: rgba(0,0,0,0);
     border-radius: 10px;
     position: fixed;
     left: 0;
-    top: 30%;
+    top: 40%;
     right: 0;
     margin: 0 auto;
     padding: 15px;
@@ -194,10 +188,9 @@
 </script>
 <div class="head"> 
 <ul class="menu">
-    <li><a href="index.html">首页</a></li>
-    <li><a href="blog/blog.html">博客</a>
-    <li><a href="img/img.html">图片</a></li>
-    <li><a href="donation/donation.html">赞助</a></li>
+    <li><a href="blog.html">博客</a></li>
+    <li><a href="img.html" target="_blank">图片</a></li>
+    <li><a href="mailto:zwq1773677992@sina.com">Email</a></li>
 </ul>
 </div>
 </body>
